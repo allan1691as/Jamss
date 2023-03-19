@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Lilita+One&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+
+.galery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    margin: 5px 10px;
+    width: 350px;
+    height: 400px;
+    border-radius: 24px;
+    background-color:rgb(70, 69, 69);
+}
+.contentImg{
+    width: 90%;
+    height: 230px;
+    margin: 5px auto;
+    border-radius:16px;
+}
+.contentImg img{
+    width: 100%;
+    height: 100%;
+    border-radius:16px;
+}
+.namecard{
+    color:#fff;
+    font-family: 'Delius', cursive;
+    font-weight: 600;
+    margin-left:25px;
+}
+.contentcard{
+    background: rgb(41, 40, 40);
+    width:90%;
+    height:110px;
+    margin:10px auto;
+    border-radius: 8px;
+
+}
+.price{
+    color: gold;
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin:-2px 60%;
+    z-index: 1;
+    font-family: 'Delius', cursive;
+}
+.contentcard{
+    width: 90%;
+    height: 130px;
+    margin:2px auto;
+    color: #fff;
+    font-family: 'Delius', cursive;
+    font-weight: 600;
+}
+#detail{
+   width: 98%;
+   margin:0px auto;
+   height:89px;
+}
