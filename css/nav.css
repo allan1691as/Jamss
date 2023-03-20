@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Lilita+One&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+
+:root{
+    --primaryback:rgb(41, 40, 40);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#242424;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    height:200px;
+    box-shadow: 0px 3px 5px orangered;
+    display: flex;
+    justify-content: space-between;
+}
+.logonav{
+   background-color: #fff;
+    width:25%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logonav img{
+    width: 200px;
+    height: 100px;
+}
+.listnav{
+    width:70%;
+    height:90%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fontlist{
+    width:95%;
+    height:80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fontlist ul{
+    width:80%;
+   height: 96%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+.fontlist ul li a{
+    color: orangered;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-family: 'Delius', cursive;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    width: 40px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+   display: none;
+}
+@media(max-width:800px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav{
+        width: 100%;  
+    }
+    .logonav{
+        width:30%;
+    }
+    .listnav{
+        width: 100%;
+    }
+    .fontlist{
+        width:80%;
+        height: 200px;
+        background: #fff;
+        position: fixed;
+        z-index:20;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+        margin-top:55%;
+        margin-left:165%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .fontlist ul{
+        width:80%;
+        flex-direction: column;
+        background-color: #242424;
+        height: 160px;
+        border-radius: 16px;
+        font-size: 0.8em;
+    }
+    .fontlist ul li{
+        height: 90%;
+        margin: 10px 0;
+    }
+    .checkbtn{
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .checkbtn img{
+       width: 40px;
+       height: auto;
+    }
+    #check:checked ~ .listnav .fontlist{
+        margin-left:-20%;
+        transition: 1.3s;
+        position: absolute;
+    }
+}
+@media(max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        height: 150px;
+    }
+    .fontlist{
+        margin-top:75%;
+    }
+
+}
+@media(max-width:400px){
+    .container{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        height: 150px;
+    }
+    .fontlist{
+        margin-top:80%;
+    }
+
+}
