@@ -107,6 +107,7 @@ body{
     }
     .checkbtn{
         margin-right:40px;
+    
     }
     .fontlist{
         width:80%;
@@ -141,7 +142,7 @@ body{
         margin-right: 15px;
     }
     .checkbtn img{
-       width: 40px;
+       width: 50px;
        height: auto;
     }
     #check:checked ~ .listnav .fontlist{
@@ -164,7 +165,7 @@ body{
     
 .fondonav{
     background: #fff;
-    height: 80px;
+    height: 78px;
     width: 180px;
    box-shadow: 5px 5px 10px red;
    margin-left: 70px;
@@ -178,7 +179,10 @@ body{
     .listnav{
         width:10%;
     }
-   
+    .checkbtn{
+        margin-right:50px;
+    
+    }
   
 }
 @media(max-width:400px){
