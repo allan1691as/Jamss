@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Lilita+One&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Lilita+One&family=Oleo+Script+Swash+Caps&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+
+:root{
+    --primaryback:rgb(41, 40, 40);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#B3B2AE;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logonav{
+    width:25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondonav{
+    background: #fff;
+    height: 108px;
+    width: 258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55%;
+    box-shadow: 3px 3px 8px red;
+}
+.fondonav img{
+    margin-top: 4px;
+    width:350px;
+    height: auto;
+    margin-right:13px;
+}
+    
+
+.listnav{
+    width:70%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontlist{
+    width:95%;
+    height:80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fontlist ul{
+    width:80%;
+   height: 96%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+.fontlist ul li a{
+    color:orangered;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-family: 'Delius', cursive;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    width: 40px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+   display: none;
+}
+@media(max-width:800px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav{
+        width: 100%;  
+    }
+    .logonav{
+        margin-left:20px;
+        width:60%;
+    }
+    .listnav{
+        width: 20%;
+    }
+    .checkbtn{
+        margin-right:40px;
+    
+    }
+    .fontlist{
+        width:80%;
+        height: 200px;
+        background:rgb(6, 6, 6,0.4);
+        backdrop-filter:blur(1px);
+        position: fixed;
+        z-index:20;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+        margin-top:55%;
+        margin-left:165%;
+        border-radius: 16px;
+        overflow: hidden;
+        border:1px solid black;
+    }
+    .fontlist ul{
+        width:80%;
+        flex-direction: column;
+        background-color:rgba(61, 61, 61, 0.7);
+        backdrop-filter: blur(2px);
+        height: 160px;
+        border-radius: 16px;
+        font-size: 0.8em;
+        border: 2px  solid #f93324;
+    }
+    .fontlist ul li{
+        height: 90%;
+        margin: 10px 0;
+    }
+    .fontlist ul li a{
+        color: #f93324;
+    }
+    .checkbtn{
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .checkbtn img{
+       width: 50px;
+       height: auto;
+    }
+    #check:checked ~ .listnav .fontlist{
+        margin-left:-20%;
+        transition: 1.3s;
+        position: absolute;
+    }
+}
+@media(max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        height: 140px;
+    }
+
+    .logonav{
+        width: 50%;
+    }
+    
+.fondonav{
+    margin-top:2px;
+    background: #fff;
+    height: 78px;
+    width: 180px;
+   box-shadow: 5px 5px 10px red;
+   margin-left: 70px;
+}
+.fondonav img{
+    margin-top: 4px;
+    width:250px;
+    height: auto;
+    margin-right:13px;
+}
+    .listnav{
+        width:10%;
+    }
+    
+    .fontlist{
+        margin-top:70%;
+      width: 90%;
+    }
+    .fontlist ul{
+        border: 2px solid #f93324;
+        width: 65%;
+    }
+    #check:checked ~ .listnav .fontlist{
+        margin-left:-35%;
+        transition: 1.3s;
+        position: absolute;
+    }
+    .checkbtn{
+        margin-right:50px;
+    
+    }
+  
+}
+@media(max-width:400px){
+    .container{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        height: 150px;
+    }
+    .logonav{
+        width: 50%;
+    }
+
+}
