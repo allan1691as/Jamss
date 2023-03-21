@@ -54,8 +54,10 @@ justify-content: center;
 .footerlocation h2{
     font-family: 'Delius', cursive;
     font-weight:bold;
+    color: orangered;
 }
 .footerlocation p{
+    color:orangered;
     width: 70%;
     margin: 0 auto;
     font-family: 'Delius', cursive;
