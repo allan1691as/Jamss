@@ -2,22 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Delius&family=Edu+QLD+Beginner:wght@500&family=Inconsolata&family=Lilita+One&family=Oleo+Script+Swash+Caps&family=Poiret+One&family=Roboto+Mono&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
 
 :root{
-    --primaryback:rgb(41, 40, 40);
+    --primaryback:rgb(17, 17, 17);
 }
 *{
     padding: 0;
     margin: 0;
 }
 body{
-    background-color:#242424;
+    background-color:var(--primaryback);
 }
 .container{
     width: 95%;
     margin: auto;
 }
 .nav{
+    background: black;
     width: 100%;
     height:200px;
+   /* box-shadow: 0px 3px 5px orangered;*/
     display: flex;
     justify-content: space-between;
 }
@@ -53,41 +55,34 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .fontlist{
-    width:95%;
-    height:80%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    width: 98%;
+    height: 30%;
 }
 .fontlist ul{
-    width:80%;
-   height: 96%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   list-style: none;
-}
-.fontlist ul li a{
-    color:orangered;
-    font-weight: 700;
-    font-size: 1.8em;
-    text-decoration: none;
-    font-family: 'Delius', cursive;
-}
-#check{
-    display: none;
-}
-.checkbtn{
-    width: 40px;
-    height: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-size: 2.6em;
+    list-style: none;
+   } 
+.fontlist ul li a{
+    color: orangered;
+ text-decoration: none;   
+  font-weight: bolder;
+  font-family: 'Delius', cursive;
+    }
+ #check{
+    display: none;
+ }   
+ .checkbtn{
+    display: flex;
     align-items: center;
-    margin-right: 10px;
-   display: none;
-}
+    display: none;
+ }
+ .ImgIcon{
+    width:50px;
+    height: auto;
+ }
 @media(max-width:800px){
     .container{
         width: 100%;
@@ -95,126 +90,80 @@ body{
         flex-wrap: wrap;
     }
     .nav{
-        width: 100%;  
+        width: 100%;
     }
     .logonav{
-        margin-left:20px;
-        width:60%;
+        width: 40%;
+        margin-left:15%;
+        
     }
     .listnav{
-        width: 20%;
-    }
-    .checkbtn{
-        margin-right:40px;
-    
+        width: 100%;
+        overflow-x:auto;
     }
     .fontlist{
-        width:80%;
-        height: 200px;
-        background:rgb(6, 6, 6,0.4);
-        backdrop-filter:blur(1px);
+        width: 80%;
         position: fixed;
-        z-index:20;
-        transition: 1s;
-        justify-content: center;
+        display: flex;
         align-items: center;
-        margin-top:55%;
-        margin-left:165%;
+        justify-content: center;
+        border: 1px solid orangered;
+        margin-top: 50%;
+        margin-left: 160%;
+        height: 40%;
+        overflow-x: auto;
+        background:rgba(2, 2, 2, 0.6);
+        backdrop-filter:blur(1px);
         border-radius: 16px;
-        overflow: hidden;
-        border:1px solid black;
-    }
-    .fontlist ul{
-        width:80%;
-        flex-direction: column;
-        background-color:rgba(6, 6, 6, 0.7);
-        backdrop-filter: blur(2px);
-        height: 160px;
-        border-radius: 16px;
-        font-size: 0.8em;
-        border: 2px  solid #f93324;
     }
     .fontlist ul li{
-        height: 90%;
-        margin: 10px 0;
+        margin-top: 5%;
+    }
+    .fontlist ul{
+        border: 2px solid orangered;
+        flex-direction: column;
+        width: 60%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        background:rgba(2, 2, 2, 0.4);
+    }
+    #check:checked ~.listnav .fontlist{
+        margin-left: -25%;
+        transition: 1s;
+        position: absolute;
+        overflow:hidden;
     }
     .checkbtn{
         display: block;
         display: flex;
-        align-items: center;
-        margin-right: 15px;
+        justify-content: center;
+        margin-right: 5%;
     }
-    .checkbtn img{
-       width: 50px;
-       height: auto;
-    }
-    #check:checked ~ .listnav .fontlist{
-        margin-left:-20%;
-        transition: 1.3s;
-        position: absolute;
-    }
-}
-@media(max-width:600px){
+} 
+@media(max-width:500px){
     .container{
         width: 100%;
     }
     .nav{
         width: 100%;
-        height: 140px;
     }
-
-    .logonav{
-        width: 50%;
-    }
-    
-.fondonav{
-    margin-top:2px;
-    background: #fff;
-    height: 78px;
-    width: 180px;
-   box-shadow: 5px 5px 10px red;
-   margin-left: 70px;
-}
-.fondonav img{
-    margin-top: 4px;
-    width:250px;
-    height: auto;
-    margin-right:13px;
-}
     .listnav{
-        width:10%;
+        width: 100%;
     }
-    
     .fontlist{
-        margin-top:70%;
-      width: 90%;
+        height: 30%;
+        margin-top:100%;
     }
     .fontlist ul{
-        border: 2px solid #f93324;
-        width: 65%;
+        width: 80%;
     }
-    #check:checked ~ .listnav .fontlist{
+    #check:checked ~.listnav .fontlist{
         margin-left:-35%;
-        transition: 1.3s;
-        position: absolute;
     }
-    .checkbtn{
-        margin-right:50px;
-    
-    }
-  
 }
-@media(max-width:400px){
-    .container{
-        width: 100%;
-    }
-    .nav{
-        width: 100%;
-        height: 150px;
-    }
-    .logonav{
-        width: 50%;
-    }
 
-}
+
 
