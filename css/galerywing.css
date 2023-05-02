@@ -95,6 +95,9 @@
         margin:15px auto;
         
     }
+    .detailfinger{
+        margin-bottom: 5px;
+    }
 }
 @media(max-width:420px){
     .galerie{
@@ -103,6 +106,8 @@
     }
     .cardwings{
         margin:15px auto;
-      
+      }
+    .detailfinger{
+        margin-bottom: 5px;
     }
 }
