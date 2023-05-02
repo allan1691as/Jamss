@@ -100,7 +100,7 @@
         margin-bottom: 5px;
     }
 }
-@media(max-width:420px){
+@media(max-width:400px){
     .galerie{
         margin-top:5px;
         width: 100%;
