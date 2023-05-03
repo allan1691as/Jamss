@@ -113,3 +113,16 @@
         margin-bottom: 5px;
     }
 }
+@media(max-width:390px){
+    .galerie{
+        margin-top:5px;
+        width: 100%;
+    }
+    .cardwings{
+        margin:15px auto;
+      
+    }
+    .detailfinger{
+        margin-bottom:8px;
+    }
+}
