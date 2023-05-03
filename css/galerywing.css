@@ -100,20 +100,7 @@
         margin-bottom: 5px;
     }
 }
-@media(max-width:415px){
-    .galerie{
-        margin-top:5px;
-        width: 100%;
-    }
-    .cardwings{
-        margin:15px auto;
-      
-    }
-    .detailfinger{
-        margin-bottom: 5px;
-    }
-}
-@media(max-width:400px){
+@media(max-width:420px){
     .galerie{
         margin-top:5px;
         width: 100%;
